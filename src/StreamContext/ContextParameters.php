@@ -32,6 +32,6 @@ class ContextParameters
         return $this;
     }
 
-    
+
 
 }
