@@ -2,12 +2,12 @@
 
 namespace Streamer\Test;
 
-use Streamer\Stream;
+use Royalcms\Component\Streamer\Stream;
 
 class StreamTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @expectedException Streamer\Exception\InvalidArgumentException
+     * @expectedException \Royalcms\Component\Streamer\Exception\InvalidArgumentException
      */
     public function testConstructorRequiresAValidResource()
     {
@@ -222,7 +222,7 @@ class StreamTest extends \PHPUnit_Framework_TestCase
     }
     
     /**
-     * @expectedException Streamer\Exception\LogicException
+     * @expectedException \Royalcms\Component\Streamer\Exception\LogicException
      */
     public function testReadThrowsExceptionOnClosedStreams()
     {
@@ -232,7 +232,7 @@ class StreamTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Streamer\Exception\LogicException
+     * @expectedException \Royalcms\Component\Streamer\Exception\LogicException
      */
     public function testReadThrowsExceptionOnNonReadbleStreams()
     {
@@ -290,7 +290,7 @@ class StreamTest extends \PHPUnit_Framework_TestCase
     }
     
     /**
-     * @expectedException Streamer\Exception\LogicException
+     * @expectedException \Royalcms\Component\Streamer\Exception\LogicException
      */
     public function testGetLineThrowsExceptionOnNonReadbleStreams()
     {
@@ -394,7 +394,7 @@ class StreamTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Streamer\Exception\LogicException
+     * @expectedException \Royalcms\Component\Streamer\Exception\LogicException
      */
     public function testWriteThrowsExceptionOnClosedStreams()
     {
@@ -404,7 +404,7 @@ class StreamTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Streamer\Exception\LogicException
+     * @expectedException \Royalcms\Component\Streamer\Exception\LogicException
      */
     public function testWriteThrowsExceptionOnNonWritableStreams()
     {
@@ -462,7 +462,7 @@ class StreamTest extends \PHPUnit_Framework_TestCase
     }
     
     /**
-     * @expectedException Streamer\Exception\LogicException
+     * @expectedException \Royalcms\Component\Streamer\Exception\LogicException
      */
     public function testCloseThrowsExceptionOnClosedStreams()
     {
