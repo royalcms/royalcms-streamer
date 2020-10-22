@@ -1,6 +1,6 @@
-# Streamer
+# Royalcms Streamer
 
-Streamer is an Object-Oriented API for PHP streams.
+Royalcms Streamer is an Object-Oriented API for PHP streams.
 
 ## Why should I use Streams?
 
@@ -16,10 +16,10 @@ PHP has a very elaborate stream API ; unfortunately, it uses functions for most 
 
 ## Installation
 
-Streamer is published on [packagist.org](http://packagist.org/packages/fzaninotto/Streamer), so you can add it to your `composer.json` file for an easy installation:
+Streamer is published on [packagist.org](http://packagist.org/packages/royalcms/streamer), so you can add it to your `composer.json` file for an easy installation:
 
 ```sh
-composer require fzaninotto/Streamer
+composer require royalcms/streamer
 ```
 
 or
@@ -27,7 +27,7 @@ or
 ```json
 {
     "require": {
-        "fzaninotto/Streamer": "0.0.1"
+        "royalcms/streamer": "0.0.1"
     }
 }
 ```
@@ -36,9 +36,9 @@ or
 
 ```php
 <?php
-use Streamer\Stream,
-	Streamer\FileStream,
-	Streamer\NetworkStream;
+use Royalcms\Component\Streamer\Stream;
+use	Royalcms\Component\Streamer\FileStream;
+use	Royalcms\Component\Streamer\NetworkStream;
 
 // basic usage
 $stream = new Stream(fopen('smiley.png', 'r'));
