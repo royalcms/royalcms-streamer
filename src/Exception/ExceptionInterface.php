@@ -1,6 +1,6 @@
 <?php
 
-namespace Streamer\Exception;
+namespace Royalcms\Component\Streamer\Exception;
 
 interface ExceptionInterface
 {

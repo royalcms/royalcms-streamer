@@ -1,6 +1,6 @@
 <?php
 
-namespace Streamer;
+namespace Royalcms\Component\Streamer;
 
 use Streamer\Exception\InvalidArgumentException;
 use Streamer\Exception\LogicException;

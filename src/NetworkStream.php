@@ -1,6 +1,6 @@
 <?php
 
-namespace Streamer;
+namespace Royalcms\Component\Streamer;
 
 class NetworkStream extends Stream
 {
